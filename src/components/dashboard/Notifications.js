@@ -4,7 +4,7 @@ import {BrowserRouter} from 'react-router-dom';
 
 function Notifications() {
   return (
-    <div>
+    <div className = "center">
         <p> Notifications </p>
     </div>
   );
