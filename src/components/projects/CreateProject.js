@@ -10,7 +10,6 @@ export class CreateProject extends Component {
         project_content : "",
         project_members : "",
 
-
     }
     handleChange = (e) => {
         this.setState({
@@ -35,7 +34,7 @@ export class CreateProject extends Component {
                     </div>
                     <div className = "input-field">
                         <label htmlFor = "project_content">Project Content</label>
-                        <textarea id="textarea1" onChange = {this.handleChange} className="materialize-textarea"></textarea>
+                        <textarea id="project_content" onChange = {this.handleChange} className="materialize-textarea blue-text text-darken-2"></textarea>
                     </div>
                     <div className = "input-field">
                         <button className = "btn blue lighten-1 z-depth-0">Create</button>

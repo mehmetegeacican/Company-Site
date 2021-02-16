@@ -1,14 +1,15 @@
 import React, {Compononent} from 'react';
 import {BrowserRouter} from 'react-router-dom';
+import projectReducer from '../../store/reducers/projectReducer';
 
 
 function ProjectSummary( {project}) {
   return (
     <div className = "card z-depth-1 project-summary">
         <div className = "card-content grey-text text-darken-3"></div>
-        <span className = "card-title"> {project.title}</span>
+        <span className = "card-title"> {project.project_title}</span>
         <p> Posted by </p>
-        <p className = "grey-text"> date 11.11.21</p>
+        <p className = "grey-text"> date 11.11.11</p>
     </div>
   );
 }
