@@ -11,7 +11,7 @@ var firebaseConfig = {
     storageBucket: "companysite-f4b4c.appspot.com",
     messagingSenderId: "760732641619",
     appId: "1:760732641619:web:12eb19be2ede31870b19a6",
-    measurementId: "G-HQ6PQKNGJ2"
+    measurementId: "G-HQ6PQKNGJ2",
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);

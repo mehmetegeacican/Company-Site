@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 import { connect } from 'react-redux'
 import {createProject} from '../../store/actions/projectActions'
-
+import {Redirect} from 'react-router-dom';
 export class CreateProject extends Component {
 
     state = {
@@ -20,10 +20,13 @@ export class CreateProject extends Component {
     handleSubmit = (e) => {
         e.preventDefault();
         //console.log(this.state);
-        this.props.createProject(this.state)
+        this.props.createProject(this.state);
+        this.props.history.push('/');
 
     }
     render() {
+        const { auth } = this.props
+        if(!auth.uid) return <Redirect to = '/intropage' />
         return (
             <div className = "container">
                 <form onSubmit = {this.handleSubmit} className = "white">
@@ -47,10 +50,16 @@ export class CreateProject extends Component {
     }
 }
 
+const mapStateToProps = (state) => {
+    return{
+        auth: state.fireAuth.auth
+    }
+
+}
 const mapDispatchToProps = (dispatch) =>{
     return{
         createProject : (project) => (dispatch(createProject(project)))
     }
 
 }
-export default connect(null,mapDispatchToProps)(CreateProject)
+export default connect(mapStateToProps,mapDispatchToProps)(CreateProject)

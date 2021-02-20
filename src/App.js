@@ -6,6 +6,8 @@ import ProjectDetails from './components/projects/ProjectDetails';
 import SignIn from './components/auth/SignIn';
 import SignUp from './components/auth/SignUp';
 import CreateProject from './components/projects/CreateProject';
+import Notifications from './components/dashboard/Notifications';
+import IntroPage from './components/dashboard/IntroPage';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
           <Route path = '/create' component = {CreateProject}></Route>
           <Route path = '/signIn' component = {SignIn}></Route>
           <Route path = '/signUp' component = {SignUp}></Route>
+          <Route path = '/notifications' component = {Notifications}></Route>
+          <Route path = '/intropage' component = {IntroPage}></Route>
         </Switch>
       </div>
     </BrowserRouter>
