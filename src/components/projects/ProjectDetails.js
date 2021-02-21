@@ -16,7 +16,7 @@ function ProjectDetails(props) {
             <div className = "container section project-details">
                 <div className = "card">
                     <div className = "card-content">
-                        <span className = "card-title indigo-text">{project.project_title} </span>
+                        <span className = "card-title indigo-text center">{project.project_title} </span>
                     </div>
                     <div className = "card-action">
                         <p className = "blue-text text-darken-1">{project.project_content}</p>

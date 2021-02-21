@@ -25,7 +25,6 @@ code {
 form{
   padding: 20px;
   margin-top: 60px;
-  background-color: skyblue;
 }
 form button, form h5{
   margin:20px 0;
@@ -37,3 +36,7 @@ textarea.materialize-textarea:focus:not([readonly]){
   border-color: skyblue;
   box-shadow: none;
 }
+.prefix{
+  color:skyblue;
+}
+
